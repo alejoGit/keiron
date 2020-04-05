@@ -1,0 +1,215 @@
+.keiron-login__wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-left: 40px;
+	width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    background: linear-gradient(159deg,#DD193E,#db1b80);
+    &::after{
+    	position: absolute;
+    	right: 0;
+    	overflow: hidden;
+	    content: "";
+	    display: inline-block;
+	    width: 100vw;
+	    height: 100vh;
+	   	background-size:2%;
+	    background-image: url('/img/pattern.png');
+
+	  
+	 
+    }
+	.keiron-login__bg{
+		width: 0;
+	    height: 0;
+	    border-color: transparent transparent transparent #fff;
+	    border-style: solid;
+	    border-width: 200vh 0 0 120vw;
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 11;
+	    content: "";
+	}
+	.keiron-login__container{
+		margin-top: -16px;
+		position: relative;
+	    min-width: 320px;
+	    max-width: 320px;
+	    box-sizing: border-box;
+	    height: 470px;
+	    z-index: 12;
+
+	}
+}
+
+.keiron-login__header{
+	.keiron-login__logo{
+		background-color:white;
+		padding-right: 32px;
+		height: 92px;
+	    width: auto;
+	}
+}
+.keiron-login__body{
+	.keiron-login__avatar{
+		margin-top: 12px;
+	    width: 120px;
+	    height: 120px;
+	    border: 2px solid #d6dbf5;
+	    margin-bottom: 40px;
+	    background-color: #fff;
+	    img{
+	    	height: 100%;
+	    	object-fit: cover;
+	    	display: block;
+	    	margin:0 auto;
+	    }
+	}
+
+}
+.keiron-login__form{
+	margin-top: 32px;
+	.keiron-login__form-group{
+		display: flex;
+		align-items: flex-start;
+		label{
+		    font-size: 13px;
+		    font-weight: 500;
+		    color: #69708d;
+		    margin-bottom: 5px;
+		    width: 100px;
+		    text-align: right;
+		}
+		.keiron-login__form-input{
+			position: relative;
+		    width: 100%;
+		    margin-bottom: 25px;
+			input{
+				width: 100%;
+			    height: 38px;
+			    border: 1px solid #d6dbf5;
+			    padding-left: 20px;
+			    padding-right: 20px;
+			    box-sizing: border-box;
+			    font-size: 12px;
+			    font-weight: 500;
+			    margin-left: 10px;
+			    &:focus{
+			    	outline:none;
+					border:1px solid #444;
+			    }
+			}
+			&::after{
+				content: "";
+			    width: 32px;
+			    height: 32px;
+			    border-radius: 32px;
+			    background-repeat: no-repeat;
+			    background-position: 50%;
+			    position: absolute;
+			    top: 3px;
+			    left: calc(100% - 14px);
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-content: center;
+			    align-items: center;
+			}
+		}
+		.keiron-input__sueccess{
+			input{
+				border: 1px solid #08b74d;
+			}
+			&::after{
+				background-size: 16px;
+			    background-color: #08b74d;
+			    content: "✓";
+			    color: #fff;
+			}
+		}
+		.keiron-input__failed{
+			input{
+				border:1px solid #cb1a35;
+			}
+			&::after{
+				background-size: 14px;
+			    background-color: #cb1a35;
+			    content: "✕";
+			    color: #fff;
+			   
+			}
+		}
+	}
+}
+// Button Styles
+.keiron-button{
+	background-color: $pink-color;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 18px;
+    height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 36px;
+    cursor: pointer;
+	@include transition(0.2s, ease-in-out);
+    &:hover{
+		background-color:darken($pink-color, 10%);
+		@include transition(0.2s, ease-in);
+    }
+    &:disabled{
+    	opacity: 0.7;
+    	cursor:not-allowed;
+    }
+}
+// Login Footer Styles
+.keiron-login__footer{
+	position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+	.keiron-login__footer-logo{
+		display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-content: center;
+	    align-items: center;
+	    font-size: 24px;
+	    font-weight: 500;
+	    color: #69708d;
+	    text-transform: uppercase;
+	    line-height: 18px;
+	    span{
+			margin-right: 5px;
+		    display: inline-block;
+		    font-size: 34px;
+		    font-weight: 800;
+		    color: #db1b80;
+		    text-transform: uppercase;
+	    }
+	}
+	.keiron-login_footer-subtitle{
+		margin:0;
+    	font-size: 12px;
+	    font-weight: 500;
+	    color: #69708d;
+	    b{
+	    	font-weight:600;
+	    }
+    }
+}

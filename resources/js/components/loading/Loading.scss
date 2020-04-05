@@ -1,0 +1,36 @@
+$loading-color:#DD1824;
+
+.keiron-loading__wrapper{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	background-color: rgba(255,255,255,0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 9999;
+	.keiron-loading__message{
+		background-color: $loading-color;
+		box-sizing: border-box;
+		padding: 20px;
+		color:white;
+		border-radius: 8px;
+   		box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .25);
+		margin-bottom: 4px;
+		position: relative;
+		width: auto;
+		max-width: 300px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	.keiron-loading__loader{
+		width: 80px;
+	    height: 80px;
+	    border: 2px solid #fff;
+	    box-sizing: border-box;
+	    border-radius: 40px;
+	   
+	}
+}
