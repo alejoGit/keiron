@@ -36416,7 +36416,7 @@ var AddTicket = function AddTicket(_ref) {
     className: "row",
     onSubmit: handleSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-9 from-group"
+    className: "col-12 col-md-9 from-group py-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
     className: "form-control",
     value: userId,
@@ -36424,7 +36424,7 @@ var AddTicket = function AddTicket(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: ""
   }, "Seleccionar usuario"), usersList())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-3 from-group"
+    className: "col-12 col-md-3 from-group py-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "btn btn-success btn-block text-uppercase"
   }, "Asignar Ticket"))));

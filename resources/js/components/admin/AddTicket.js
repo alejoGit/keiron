@@ -55,13 +55,13 @@ export const AddTicket = ({ users, refreshTickets, setLoading }) => {
     <React.Fragment>
     	<Notifications />
     	<form className="row" onSubmit={handleSubmit}>
-    		<div className="col-9 from-group">
+    		<div className="col-12 col-md-9 from-group py-1">
     			<select className="form-control" value={userId} onChange={onChangeUserId}>
     				<option value="">Seleccionar usuario</option>
     				{usersList()}
     			</select>
     		</div>
-    		<div className="col-3 from-group">
+    		<div className="col-12 col-md-3 from-group py-1">
     			<button className="btn btn-success btn-block text-uppercase">Asignar Ticket</button>
     		</div>
     	</form>
