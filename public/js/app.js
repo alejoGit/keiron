@@ -36388,7 +36388,7 @@ var AddTicket = function AddTicket(_ref) {
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
 
-    if (userId.value == '') {
+    if (userId == '') {
       react_notify_toast__WEBPACK_IMPORTED_MODULE_3__["notify"].show("Porfavor seleccione un usuario", "error");
       return;
     }

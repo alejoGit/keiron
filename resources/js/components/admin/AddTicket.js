@@ -22,7 +22,7 @@ export const AddTicket = ({ users, refreshTickets, setLoading }) => {
   }
   const handleSubmit = (event) => {
 		event.preventDefault();
-		if(userId.value==''){
+		if(userId==''){
 			notify.show("Porfavor seleccione un usuario", "error");
 			return;
 		}
